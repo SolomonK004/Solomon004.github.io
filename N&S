@@ -1,0 +1,365 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Get Better Soon 🌷</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e8f4ff);
+      color: #444;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 40px 20px 60px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 30px 25px;
+      border-radius: 30px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+      animation: appear 1.2s ease;
+    }
+
+    h1 {
+      color: #e86b9b;
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .message {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .care-list {
+      margin: 25px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .care-list li {
+      background: #fff4f8;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 15px;
+      transition: transform 0.2s;
+    }
+
+    .care-list li:hover {
+      transform: scale(1.03);
+    }
+
+    .gif-box {
+      margin: 30px 0;
+      padding: 15px;
+      border-radius: 20px;
+      background: #fff7fb;
+    }
+
+    .gif-box img {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 18px;
+    }
+
+    .placeholder {
+      padding: 40px 15px;
+      border: 2px dashed #f0a7c4;
+      border-radius: 18px;
+      color: #b87591;
+    }
+
+    button {
+      border: none;
+      background: #ed7da8;
+      color: white;
+      font-size: 1rem;
+      padding: 14px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(237,125,168,0.3);
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #secret {
+      display: none;
+      margin-top: 25px;
+      padding: 20px;
+      background: #fff0f6;
+      border-radius: 20px;
+      animation: appear 0.8s ease;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      font-size: 20px;
+      animation: floatUp linear forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Get Better Soon 🌷</h1>
+
+      <div class="subtitle">
+        A tiny little something for you 🫶
+      </div>
+
+      <div class="message">
+
+        <p>
+          Hey you ❤️
+        </p>
+
+        <p>
+          I heard you're not feeling well, so I wanted to leave you
+          a little reminder that someone is thinking about you.
+        </p>
+
+        <p>
+          Please take care of yourself, okay?
+          Get some proper rest, stay warm, drink plenty of water,
+          and most importantly...
+          <strong>go make yourself some hot tea ☕</strong>
+        </p>
+
+        <p>
+          I hope you feel better soon.
+          Being sick is already annoying enough,
+          so for now your only job is to rest and recover. 🧸
+        </p>
+
+      </div>
+
+
+      <ul class="care-list">
+
+        <li>☕ Drink some hot tea</li>
+
+        <li>💧 Drink plenty of water</li>
+
+        <li>🛌 Get some proper sleep</li>
+
+        <li>🧸 Stay warm</li>
+
+        <li>🍲 Eat something</li>
+
+        <li>❤️ Take care of yourself</li>
+
+      </ul>
+
+
+      <!-- GIF SECTION -->
+
+      <div class="gif-box">
+
+        <h2>Emergency Get-Well GIF 🚑😂</h2>
+
+        <!--
+          REPLACE THIS PLACEHOLDER WITH YOUR GIF
+
+          Example:
+
+          <img src="YOUR-GIF-URL-HERE" alt="Get well soon">
+
+        -->
+
+        <div class="placeholder">
+          🐻
+
+          <br><br>
+
+          Put your cute GIF here!
+
+        </div>
+
+      </div>
+
+
+      <!-- PHOTO SECTION -->
+
+      <div class="gif-box">
+
+        <h2>A little something for you 📸</h2>
+
+        <!--
+          You can put a photo here.
+
+          Example:
+
+          <img src="YOUR-PHOTO-URL-HERE" alt="Cute photo">
+
+        -->
+
+        <div class="placeholder">
+          📷
+
+          <br><br>
+
+          Put your photo here!
+        </div>
+
+      </div>
+
+
+      <!-- SECRET MESSAGE -->
+
+      <button onclick="showSecret()">
+        Don't click this 👀
+      </button>
+
+      <div id="secret">
+
+        <h2>Okay... you clicked it 😂</h2>
+
+        <p>
+          Fine. Here's another reminder:
+        </p>
+
+        <p>
+          <strong>GET BETTER SOON. 😤❤️</strong>
+        </p>
+
+        <p>
+          And yes, I'm checking whether you actually drank that tea. ☕👀
+        </p>
+
+      </div>
+
+
+      <div class="footer">
+        Made with a little bit of concern and a lot of good wishes 🌷
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    function showSecret() {
+
+      const secret = document.getElementById("secret");
+
+      secret.style.display = "block";
+
+      // Create a little heart explosion ❤️
+
+      for (let i = 0; i < 15; i++) {
+
+        createHeart();
+
+      }
+
+    }
+
+
+    function createHeart() {
+
+      const heart = document.createElement("div");
+
+      heart.className = "heart";
+
+      const emojis = ["❤️", "💕", "💗", "🌸", "🫶", "✨"];
+
+      heart.innerHTML =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+      heart.style.left =
+        Math.random() * 100 + "vw";
+
+      heart.style.animationDuration =
+        (3 + Math.random() * 3) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+
+        heart.remove();
+
+      }, 6000);
+
+    }
+
+
+    // Random floating hearts
+
+    setInterval(() => {
+
+      createHeart();
+
+    }, 1800);
+
+  </script>
+
+</body>
+</html>
+```
